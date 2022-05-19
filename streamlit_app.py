@@ -1,3 +1,3 @@
 import streamlit
 
-streamlit.title("HUNTER B SYSTEM")
+streamlit.title('HUNTER B SYSTEM')
