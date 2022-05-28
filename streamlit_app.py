@@ -17,14 +17,14 @@ def init_connection():
 
   
 client = init_connection()
-items = get_data()
+#items = get_data()
   
 streamlit.header('HUNTER TRADER')
 streamlit.header('MULT-CORRETORA - ANALISE')
 
 # Print results.
-for item in items:
-    st.write(f"{item['date']} | {item['type']} | {item['result']} | {item['timeframe']} | {item['active']}")
+#for item in items:
+#    st.write(f"{item['date']} | {item['type']} | {item['result']} | {item['timeframe']} | {item['active']}")
 
 
 streamlit.stop()
