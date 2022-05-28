@@ -3,13 +3,14 @@ import pandas
 import requests
 import snowflake.connector
 from urllib.error import URLError
-import pymongo as mdb
+from pymongo import MongoClient
 
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
 def init_connection():
-    return pymongo.MongoClient(**st.secrets["mongo"])
+    print(st.secrets["mongo"])
+    return pymongo.MongoClient(st.secrets["mongo"])
 
 # Pull data from the collection.
 # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
