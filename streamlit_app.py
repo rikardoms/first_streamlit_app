@@ -3,6 +3,7 @@ import pandas
 import requests
 import snowflake.connector
 from urllib.error import URLError
+import pymongo as mdb
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
