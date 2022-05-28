@@ -6,7 +6,8 @@ from urllib.error import URLError
 import pymongo as mdb
 
 
-streamlit.header('HUNTER MULT-CORRETORA - ANALISE')
+streamlit.header('HUNTER TRADER')
+streamlit.header('MULT-CORRETORA - ANALISE')
 
 
 
