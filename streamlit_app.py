@@ -8,7 +8,7 @@ from pymongo import MongoClient
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 def init_connection():
-    print(st.secrets["mongo"])
+    print(streamlit.secrets["mongo"])
     #return pymongo.MongoClient(st.secrets["mongo"])
 
 # Pull data from the collection.
