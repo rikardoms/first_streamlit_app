@@ -9,7 +9,7 @@ from pymongo import MongoClient
 # Uses st.experimental_singleton to only run once.
 def init_connection():
     print(st.secrets["mongo"])
-    return pymongo.MongoClient(st.secrets["mongo"])
+    #return pymongo.MongoClient(st.secrets["mongo"])
 
 # Pull data from the collection.
 # Uses st.experimental_memo to only rerun when the query changes or after 10 min.
